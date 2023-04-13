@@ -9,11 +9,11 @@ sumbitButton.addEventListener("click", () => {
   let input = Number(number.value);
   console.log(input);
   console.log(typeof input);
-  if ( isNaN(input) || (input < 0 || input > 9)) {
+  if (isNaN(input) || !Number.isInteger(input) || input <= 0 || input > 9) {
     number.value = null;
-    alert('所輸入的資料並不在範圍內或是有誤，請重新輸入')
-  }else{
-    localStorage.setItem('number',input)
+    alert("所輸入的資料並不在範圍內或是有誤，請重新輸入");
+  } else {
+    localStorage.setItem("number", input);
     location.href = "result.html";
   }
 });
