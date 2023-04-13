@@ -1,0 +1,12 @@
+.title{
+ text-align: center;
+}
+
+.answer{
+    list-style-type: none;
+
+    &__item{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
