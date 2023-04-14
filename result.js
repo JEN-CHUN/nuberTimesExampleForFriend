@@ -16,6 +16,8 @@ function printNum(range) {
       result += `<li class="answer__item">${number}X${i + 1}=${
         number * (i + 1)
       }</li>`;
+    } else {
+      result += `<li class="answer__item">&nbsp;</li>`;
     }
   }
   answerList.innerHTML = result;
