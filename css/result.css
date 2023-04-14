@@ -4,8 +4,13 @@
 
 .answer {
   list-style-type: none;
+  width: 100px;
+  margin: auto;
+  border: 1px solid black;
 }
 .answer__item {
-  text-align: center;
-  margin-top: 20px;
+  border-bottom: 1px solid black;
+}
+.answer__item:last-of-type {
+  border-bottom: none;
 }/*# sourceMappingURL=result.css.map */

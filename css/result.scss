@@ -1,12 +1,17 @@
-.title{
- text-align: center;
+.title {
+  text-align: center;
 }
 
-.answer{
-    list-style-type: none;
+.answer {
+  list-style-type: none;
+  width: 100px;
+  margin: auto;
 
-    &__item{
-        text-align: center;
-        margin-top: 20px;
-    }
+  border: 1px solid black;
+  &__item {
+    border-bottom: 1px solid black;
+  }
+  &__item:last-of-type {
+    border-bottom: none;
+  }
 }
